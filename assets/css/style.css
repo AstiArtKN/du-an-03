@@ -48,6 +48,28 @@ a {
   font-weight: 300;
   line-height: 1.67; /* 166.667% */
 }
+.control {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.control__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #575f66;
+  background: #fff;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.control__btn:hover {
+  background: #2e80ce;
+  border-color: #fff;
+  color: #fff;
+}
+.control__btn--next {
+  rotate: 180deg;
+}
 /* ========================= header =================================== */
 .header {
   padding-top: 30px; /*-----chú ý-------*/
@@ -276,8 +298,9 @@ a {
 
 /* ========================= blog =================================== */
 .blog {
+  margin-top: 85px;
   background: #fff;
-  padding: 170px 0;
+  padding: 85px 0 206px;
 }
 .blog__main {
   position: relative;
@@ -309,4 +332,60 @@ a {
 }
 .blog__btn {
   margin-top: 38px;
+}
+
+/* ========================= feedback =================================== */
+.feedback {
+  background: #fff;
+  padding: 85px 0;
+}
+.feedback-header {
+  text-align: center;
+  margin: 0 auto;
+}
+.feedback__btn {
+  margin-top: 38px;
+}
+.feedback__list {
+  margin-top: 70px;
+  display: grid;
+  column-gap: 34px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feedback-item__img {
+  padding-top: 28px;
+  border-radius: 6px;
+  background: #eaf6ff;
+}
+.feedback-item__thumb {
+  height: 290px;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.5s;
+  cursor: pointer;
+  overflow: hidden;
+}
+.feedback-item:hover .feedback-item__thumb {
+  transform: scale(1.1);
+}
+.feedback-item__name {
+  margin-top: 12px;
+  color: #10375c;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+.feedback-item__desc {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.86; /* 185.714% */
+}
+
+.feedback__control {
+  margin-top: 38px;
+  justify-content: center;
 }
