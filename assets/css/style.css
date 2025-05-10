@@ -389,3 +389,36 @@ a {
   margin-top: 38px;
   justify-content: center;
 }
+/* ========================= install mobile =================================== */
+
+.install {
+  padding: 180px 0 85px;
+}
+.install__inner {
+  position: relative;
+  height: 427px;
+  background: #2e80ce;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+.install__phone {
+  position: absolute;
+  bottom: 0;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+.install__content {
+  max-width: 586px;
+}
+.install__heading,
+.install__desc {
+  color: #fff;
+}
+.install_btn {
+  display: flex;
+  gap: 28px;
+  margin-top: 38px;
+}
